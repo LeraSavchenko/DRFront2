@@ -1,0 +1,104 @@
+$green: #30ae63
+
+body
+	font: 14px "Open Sans", sans-serif
+	background-color: rgba(90, 104, 114, .08)
+
+*
+	box-sizing: border-box
+
+@media only screen and (min-width: 890px)
+	.content
+		width: 80%
+		margin: 0 auto
+
+	.connect
+		margin: 30px auto
+		max-width: 600px
+		text-align: center
+
+	.connect_btns
+		margin: 0 auto
+		display: flex
+		justify-content: center
+
+	.connect_btn
+		margin: 0 20px
+		padding: 10px
+		border-bottom: 3px solid transparent
+	
+	.connect_btn:hover
+		border-bottom: 3px solid $green
+
+	.connect_btn_a
+		text-decoration: none
+		color: black
+
+	.telegram
+		margin: 20px auto
+		display: flex
+		justify-content: center
+	
+	.telegram_phone
+		margin-right: 15%
+		margin-left: 10%
+	
+	.telegram_bot
+		padding: 3% 7% 4% 4%
+		background-color: white
+		margin: 65px 0
+		height: 448px
+		width: 50%
+	
+	.title
+		display: flex
+		justify-content: left
+		margin-bottom: 10%
+	
+	.title_text
+		line-height: 1
+		margin-left: 20px
+		
+	.bot_list
+		padding-left: 20px
+		margin: 10% 0
+	
+	.bot_list_li
+		margin: 5% 0
+	
+	.bot_btn
+		background-color: $green
+		width: 100%
+		min-height: 40px
+		padding: 10px 0
+		border-radius: 2px
+		text-align: center
+		color: white
+	
+	.bot_btn:hover
+		background-color: forestgreen
+		
+	.bot_btn_a
+		text-decoration: none
+	
+	.slider_dots
+		width: 100%
+		margin-top: 40px
+		display: flex
+		justify-content: center
+	
+	.dot
+		border: 2px solid $green
+		border-radius: 50%
+		margin: 0 6px
+		height: 14px
+		width: 14px
+	
+	.dot:hover
+		background-color: $green
+	
+	.blog
+		width: 100%
+		background-color: white
+	
+@media only screen and (max-width: 889px)
