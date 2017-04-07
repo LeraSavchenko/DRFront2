@@ -32,9 +32,12 @@ body
 	.connect_btn:hover
 		border-bottom: 3px solid $green
 
-	.connect_btn_a
+	.link_text
 		text-decoration: none
 		color: black
+	
+	.link_text:hover
+		color: $green
 
 	.telegram
 		margin: 20px auto
@@ -63,7 +66,7 @@ body
 		
 	.bot_list
 		padding-left: 20px
-		margin: 10% 0
+		margin: 10% 0 
 	
 	.bot_list_li
 		margin: 5% 0
@@ -78,7 +81,7 @@ body
 		color: white
 	
 	.bot_btn:hover
-		background-color: forestgreen
+		background-color: $grey
 		
 	.bot_btn_a
 		text-decoration: none
@@ -120,9 +123,8 @@ body
 		margin: 0 1.5% 
 	
 	.feed_topic
+		@extend .link_text
 		font-size: 16px
-		text-decoration: none
-		color: black
 		font-weight: normal
 
 	.feed_category_1,
@@ -167,11 +169,58 @@ body
 		border-top: 2px solid $lightgrey
 		
 	.blog_page_btn_a
-		text-decoration: none
-		color: black
+		@extend .link_text
 		font-size: 16px
 	
-	.blog_page_btn:hover
-		background-color: $lightgrey
+	.link_lists
+		display: flex
+		justify-content: center
+	
+	.link_column
+		width: 20%
+		margin-right: 5%
+		margin-top: 40px
+		
+	.link_list
+		list-style-type: none
+		font-size: 13px
+		
+	.link_list_title 
+		font-size: 16px
+		
+	.link_list_el
+		margin: 20px 0
+	
+	.logo
+		width: 100%
+		text-align: center
+		margin: 20px 0 50px 0
+	
+	.address
+		font-size: 11px
 	
 @media only screen and (max-width: 889px)
+	.telegram_phone
+		display: none
+	
+	.content
+		width: 100%
+	
+	.connect
+		margin: 30px auto
+		max-width: 600px
+		text-align: center
+
+	.connect_btns
+		margin: 0 auto
+		display: flex
+		justify-content: center
+
+	.connect_btn
+		margin: 0 20px
+		padding: 10px
+		border-bottom: 3px solid transparent
+	
+	.connect_btn:hover
+		border-bottom: 3px solid $green
+	
