@@ -1,4 +1,6 @@
 $green: #30ae63
+$grey: #8c9ba5
+$lightgrey: #dfe3e6
 
 body
 	font: 14px "Open Sans", sans-serif
@@ -83,7 +85,7 @@ body
 	
 	.slider_dots
 		width: 100%
-		margin-top: 40px
+		margin: 40px 0
 		display: flex
 		justify-content: center
 	
@@ -100,5 +102,76 @@ body
 	.blog
 		width: 100%
 		background-color: white
+		padding-top: 10px 
+	
+	.blog_title
+		margin: 0 auto 20px
+		max-width: 600px
+		text-align: center
+		
+	.blog_feed
+		display: flex
+		justify-content: center
+		margin: 0 5% 30px
+	
+	.feed_item
+		width: 33%
+		text-align: left
+		margin: 0 1.5% 
+	
+	.feed_topic
+		font-size: 16px
+		text-decoration: none
+		color: black
+		font-weight: normal
+
+	.feed_category_1,
+	.feed_category_2,
+	.feed_category_3
+		font-size: 11px
+		text-decoration: none
+		font-weight: normal
+	
+	.feed_category_1
+		color: #ba8ff7
+	
+	.feed_category_2
+		color: $green
+	
+	.feed_category_3
+		color: #2573d8
+	
+	.feed_pic
+		max-width: 100%
+		height: auto
+		text-align: center
+	
+	.post_info
+		color: $grey
+		font-size: 12px 
+		display: flex
+		justify-content: left
+	
+	.divider
+		border-radius: 50%
+		background-color: $grey
+		width: 3px
+		height: 3px
+		margin: 7px 7px 0
+	
+	.blog_page_btn
+		width: 100%
+		min-height: 40px
+		line-height: 40px
+		text-align: center
+		border-top: 2px solid $lightgrey
+		
+	.blog_page_btn_a
+		text-decoration: none
+		color: black
+		font-size: 16px
+	
+	.blog_page_btn:hover
+		background-color: $lightgrey
 	
 @media only screen and (max-width: 889px)
