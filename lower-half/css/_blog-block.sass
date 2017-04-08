@@ -1,0 +1,73 @@
+.blog
+	width: 100%
+	background-color: white
+	padding-top: 10px 
+	
+.blog__title
+	margin: 0 auto 20px
+		
+.blog-feed
+	@extend .centering-block
+	margin: 0 5% 30px
+	
+.blog-feed-item
+	width: 33%
+	text-align: left
+	margin: 0 1.5% 
+
+.blog-feed-item__topic
+	@extend .text_non-decorated
+	font-size: 16px
+	font-weight: normal
+	color: black
+	
+.blog-feed-item__topic:hover
+	color: $grey
+
+.blog-feed-item__category
+	@extend .text_non-decorated
+	font-size: 11px
+	font-weight: normal
+	
+.blog-feed-item__category:hover
+	color: $grey
+	
+.blog-feed-item__category_lilac
+	color: #ba8ff7
+	
+.blog-feed-item__category_green
+	color: $green
+	
+.blog-feed-item__category_blue
+	color: #2573d8
+	
+.blog-feed-item__image
+	max-width: 100%
+	height: auto
+	text-align: center
+	
+.blog-feed-item-author
+	color: $grey
+	font-size: 12px 
+	display: flex
+	justify-content: left
+	
+.blog-feed-item-author__divider
+	border-radius: 50%
+	background-color: $grey
+	width: 3px
+	height: 3px
+	margin: 7px 7px 0
+	
+.blog-button
+	@extend .button
+	width: 100%
+	line-height: 40px
+	border-top: 2px solid $lightgrey
+		
+.blog-button_font
+	font-size: 16px
+	color: black
+	
+.blog-button_font:hover
+	color: $grey
