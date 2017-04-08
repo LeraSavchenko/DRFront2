@@ -9,10 +9,12 @@
   font-family: 'Open Sans', sans-serif
   font-size: 14px
 
-.page-wrapper
+
+body
   width: 100%
   margin: auto
-  background-color: dimgrey
+
+  background-color: #5A6872
   position: relative
 
 $maincolor: #30AE63
@@ -34,6 +36,7 @@ A:visited
   @include background("../img/homepage.png")
   color: white
   width: 100%
+  min-height: 301px
   position: relative
   &__container
     min-width: 70%
@@ -109,10 +112,10 @@ A:visited
   position: relative
   display: flex
   flex-wrap: wrap-reverse
-  max-width: 890px
-
+  width: 80%
+  justify-content: center
   color: black
-  margin: auto
+  margin: 0 auto
   background-color: white
   padding-top: 55px
   margin-top: 30px
@@ -151,8 +154,7 @@ A:visited
 
 .block3,.block4
   position: relative
-  max-width: 890px
-
+  width: 80%
   color: black
   margin: auto
   background-color: white
@@ -172,6 +174,10 @@ A:visited
     padding-bottom: 15px
     &__content
       padding-right: 5px
+      flex-wrap: nowrap
+      img
+        max-width: 100%
+        height: auto
       &__info
         p
           text-align: left

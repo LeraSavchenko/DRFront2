@@ -2,10 +2,10 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 14px; }
 
-.page-wrapper {
+body {
   width: 100%;
   margin: auto;
-  background-color: dimgrey;
+  background-color: #5A6872;
   position: relative; }
 
 button {
@@ -31,6 +31,7 @@ A:visited {
   background-repeat: round;
   color: white;
   width: 100%;
+  min-height: 301px;
   position: relative; }
   .top__container {
     min-width: 70%;
@@ -98,9 +99,10 @@ A:visited {
   position: relative;
   display: flex;
   flex-wrap: wrap-reverse;
-  max-width: 890px;
+  width: 80%;
+  justify-content: center;
   color: black;
-  margin: auto;
+  margin: 0 auto;
   background-color: white;
   padding-top: 55px;
   margin-top: 30px;
@@ -138,7 +140,7 @@ A:visited {
 
 .block3, .block4 {
   position: relative;
-  max-width: 890px;
+  width: 80%;
   color: black;
   margin: auto;
   background-color: white;
@@ -157,7 +159,11 @@ A:visited {
     padding-left: 15px;
     padding-bottom: 15px; }
     .block3__mainpart__content, .block4__mainpart__content {
-      padding-right: 5px; }
+      padding-right: 5px;
+      flex-wrap: nowrap; }
+      .block3__mainpart__content img, .block4__mainpart__content img {
+        max-width: 100%;
+        height: auto; }
       .block3__mainpart__content__info p, .block4__mainpart__content__info p {
         text-align: left;
         font-size: 12px;
