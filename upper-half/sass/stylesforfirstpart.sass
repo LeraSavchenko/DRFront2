@@ -13,8 +13,7 @@
 body
   width: 100%
   margin: auto
-
-  background-color: #5A6872
+  background-color: rgba(90, 104, 114, 0.08)
   position: relative
 
 $maincolor: #30AE63
@@ -27,7 +26,7 @@ A
 A:link
   text-decoration: none
 A:hover
-  text-decoration: underline
+  border-bottom: 3px solid $maincolor
 
 A:visited
   text-decoration: underline
@@ -52,6 +51,9 @@ A:visited
         padding-right: 10%
       a
         padding: 0px 20px
+        &:hover
+          border-bottom: 4px solid rgba(255,255,255,0.2)
+
     &__logo
       transform: translateY(35%)
     &__add

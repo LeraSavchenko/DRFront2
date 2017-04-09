@@ -5,7 +5,7 @@
 body {
   width: 100%;
   margin: auto;
-  background-color: #5A6872;
+  background-color: rgba(90, 104, 114, 0.08);
   position: relative; }
 
 button {
@@ -20,7 +20,7 @@ A:link {
   text-decoration: none; }
 
 A:hover {
-  text-decoration: underline; }
+  border-bottom: 3px solid #30AE63; }
 
 A:visited {
   text-decoration: underline; }
@@ -46,6 +46,8 @@ A:visited {
         padding-right: 10%; }
       .top__menu li a {
         padding: 0px 20px; }
+        .top__menu li a:hover {
+          border-bottom: 4px solid rgba(255, 255, 255, 0.2); }
     .top__menu__logo {
       transform: translateY(35%); }
     .top__menu__add {
