@@ -1,0 +1,231 @@
+=background($url)
+	background: $url no-repeat center center
+
+@media screen and (min-width: 620px)
+	.listing
+		display: -webkit-inline-flex
+		justify-content: flex-start
+
+		&__image
+			height: 170px
+			width: 242px
+
+		&-info
+			margin: 0 1rem
+
+		&-pricing
+			width: 145px
+			margin-left: auto
+
+			&__next
+				margin-top: 140px
+
+			&__uah
+				text-align: right
+	
+			&__label
+				float: right
+	
+			&-connect
+				float: right
+				height: 32px
+	
+				&__call
+					padding: 0 26px
+	
+				&__text
+					padding: 0 26px
+					margin-left: 2px
+	
+
+	
+@media screen and (max-width: 619px)
+	.listing
+	
+		&__image
+			width: inherit
+			height: 180px
+			margin-bottom: 1rem
+
+		&-pricing
+			width: 100%
+			display: inline-block
+	
+			&__next
+				margin-top: 10px
+
+			&__uah
+				width: 50%
+				float: left
+				clear: right
+	
+			&__usd
+				width: 50%
+	
+				&__rate
+					display: none
+	
+			&__label
+				width: 48%
+				float: left
+				clear: right
+				text-align: center
+	
+			&-connect
+				width: 52%
+				margin: 20px 0
+				height: 36px
+	
+				&__call
+					width: 50%
+					margin-left: 1rem
+	
+				&__text
+					width: 50%
+					margin-left: 0.5rem
+		
+
+.listing
+	background-color: white
+	width: 100%
+	padding: 15px 20px 0
+
+	&-dots
+		@extend .centering-block
+		background-color: white
+		width: 100%
+		padding-bottom: 20px
+		margin-bottom: 30px
+
+		&__item
+			border-radius: 50%
+			background-color: #d8d8d8
+			margin: 0 3px
+			height: 10px
+			width: 10px
+
+		&__item:hover
+			background-color: #979797
+
+	&__link
+		color: blue
+		&:hover
+			color: $grey
+	
+	&__image
+		background-size: contain
+		
+		&_first
+			+background(url(../img/listing1.png))
+	
+		&_second
+			+background(url(../img/listing2.png))
+	
+		&_third
+			+background(url(../img/listing3.png))
+	
+	&-info
+		
+		font-size: 13px
+
+		& a
+			font-size: 16px
+
+		&-location
+			display: flex
+			margin-top: 10px
+
+	&-features
+		margin-top: 20px
+
+		&__title
+			color: $grey
+			font-size: 12px
+
+		&__details
+			display: flex
+			color: $darkgrey
+			margin: 10px 0 20px
+			font-size: 12px
+		
+		&__text
+			max-width: 400px
+	
+	&-pricing
+		&__next
+			font-size: 12px
+			text-align: right
+			line-height: 0.8
+			&_link
+				color: #979797
+				&:hover
+					color: $green
+		
+		&__uah
+			font-size: 18px
+			margin: 0
+		
+		&__usd
+			font-size: 14px
+			display: flex
+
+			& label
+				color: $mediumgrey
+				text-align: right
+				line-height: 31px
+				margin-right: 15px
+				width: 80%
+	
+			&__rate
+				width: 100%
+				padding: 5px
+				color: $mediumgrey
+				border-bottom: 2px solid $mediumgrey
+	
+			&__rate:hover
+				color: $green
+				border-bottom: 2px solid $green
+		
+		&-connect
+			display: flex
+			text-align: center
+			float: right
+
+			& img
+				transform: translateY(40%)
+	
+			&__call
+				border: 2px solid $green
+				border-radius: 3px
+				&:hover
+					border: 2px solid $grey
+					cursor: pointer
+	
+			&__text
+				border: 2px solid blue
+				border-radius: 3px
+				&:hover
+					border: 2px solid $grey
+					cursor: pointer
+		
+		&__label
+			font-size: 0.9em
+			margin: 20px 0
+			height: 36px
+			line-height: 36px
+
+			& img
+				transform: translateY(20%)
+				margin-left: 0.7em
+	
+			&_red
+				background-color: #ffefea
+				color: #d00202
+				border-radius: 3px
+				padding: 0 0.94em
+	
+			&_green
+				background-color: #eafff5
+				color: $green
+				border-radius: 3px
+				padding: 0 0.9em

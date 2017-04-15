@@ -1,0 +1,50 @@
+@media screen and (min-width: 620px)
+	.footer-links
+		display: flex
+		justify-content: center
+
+	.column
+		width: 20%
+		margin-right: 5%
+
+		&-list-entry__social
+			width: 60%
+
+@media screen and (max-width: 619px)
+	.column
+		text-align: center
+		width: 170px
+		margin: 0 auto 
+
+		&-list
+			padding: 0
+
+			&-entry__social
+				width: 100%
+				padding: 0 2rem
+				
+.column-list
+	list-style-type: none
+	font-size: 13px
+	color: $footercontent
+		
+.column-list__title 
+	font-size: 16px
+		
+.column-list-entry
+	margin: 20px 0
+	justify-content: space-between
+
+	&__social
+		font-size: 20px
+		display: flex
+		
+.column-list-entry__text
+	@extend .text_non-decorated
+	color: $footercontent
+
+.column-list-entry__text:hover
+	color: $green
+
+.column-list-entry__address
+	font-size: 11px

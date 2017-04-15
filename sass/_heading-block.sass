@@ -1,0 +1,71 @@
+@media screen and (min-width: 880px)
+	.heading
+	
+		&-results
+			display: flex
+			&-sort
+				width: 30%
+		&-link
+			&_mobile
+				display: none
+
+@media screen and (min-width: 620px) and (max-width: 879px)
+	.heading
+		padding: 0 1rem 
+
+		&-results
+			display: flex
+			&-sort
+				width: 30%
+		&-link
+			&_mobile
+				display: none
+
+
+@media screen and (max-width: 619px)
+	.heading 
+		padding: 0 1rem
+
+		& h2
+			font-size: 16px
+
+		&-link
+			display: none
+
+		&-results-sort
+			width: 65%
+
+
+.heading
+	margin: 30px 0 10px
+	
+	& h2
+		font-weight: normal
+	
+	&-results
+		color: $grey
+		
+		&__amount
+			width: 70%
+			line-height: 40px
+		
+		&-sort
+			display: flex
+			
+			&__by
+				height: 40px
+				color: $grey
+				font-size: 14px
+				border: none
+				background-color: inherit
+				
+				&_price
+					width: 55%
+			
+				&_currency
+					width: 45%
+					margin-left: 5px
+				
+.slash
+	color: blue
+	margin: 0 5px
