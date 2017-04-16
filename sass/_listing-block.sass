@@ -1,9 +1,17 @@
 =background($url)
 	background: $url no-repeat center center
 
+=priceLabel($bgcolor, $color, $padding)
+	background-color: $bgcolor
+	color: $color
+	border-radius: 3px
+	padding-left: $padding
+	padding-right: $padding
+	
+
 @media screen and (min-width: 620px)
 	.listing
-		display: -webkit-inline-flex
+		display: inline-flex
 		justify-content: flex-start
 
 		&__image
@@ -219,13 +227,7 @@
 				margin-left: 0.7em
 	
 			&_red
-				background-color: #ffefea
-				color: #d00202
-				border-radius: 3px
-				padding: 0 0.94em
+				+priceLabel(#ffefea, #d00202, 0.94em)
 	
 			&_green
-				background-color: #eafff5
-				color: $green
-				border-radius: 3px
-				padding: 0 0.9em
+				+priceLabel(#eafff5, $green, 0.9em)

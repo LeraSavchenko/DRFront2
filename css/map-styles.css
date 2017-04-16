@@ -103,7 +103,7 @@
     .top-menu__button:active {
       background-color: #50db88; }
     .top-menu__button:disabled {
-      opacity: 30%; }
+      opacity: 0.3; }
     .top-menu__button img {
       padding-right: 7px;
       transform: translateY(20%); }
@@ -216,7 +216,7 @@
 
 @media screen and (min-width: 620px) {
   .listing {
-    display: -webkit-inline-flex;
+    display: inline-flex;
     justify-content: flex-start; }
     .listing__image {
       height: 170px;
@@ -379,12 +379,14 @@
       background-color: #ffefea;
       color: #d00202;
       border-radius: 3px;
-      padding: 0 0.94em; }
+      padding-left: 0.94em;
+      padding-right: 0.94em; }
     .listing-pricing__label_green {
       background-color: #eafff5;
       color: #30ae63;
       border-radius: 3px;
-      padding: 0 0.9em; }
+      padding-left: 0.9em;
+      padding-right: 0.9em; }
 
 body {
   font: 14px "Open Sans", sans-serif;
@@ -407,7 +409,6 @@ body {
     margin-top: 162px;
     margin-right: 10px;
     overflow: hidden;
-    max-height: auto;
     max-width: 20%; }
 
   #map-canvas {
