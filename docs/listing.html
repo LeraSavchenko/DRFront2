@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listing</title>
+	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+	<script src="js/map.js" type='text/javascript'></script>
+	
+	<script src="https://use.fontawesome.com/67d861fab9.js"></script>
+	
+    <link rel="stylesheet" type="text/css" href="css/map-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+	
+<body>
+	<header>
+	 		<div class="top-container">
+				<div class="top-menu top-menu__nav">
+					<ul>
+						<li><img class ="top-menu__logo" src="img/logo.png" alt="logo"/></li>
+						<li><a class="text_non-decorated" href="#">
+							<div class="top-button">Аренда</div></a>
+						</li>
+						
+						<li><a class="text_non-decorated" href="#">
+							<div class="top-button">Продажа</div></a>
+						</li>
+						
+						<li><a class="text_non-decorated" href="#">
+							<div class="top-button">Посуточно</div></a>
+						</li>
+						
+						<li><a class="text_non-decorated" href="#">
+							<div class="top-button"><img src="img/Settings.png" alt="dots">Еще</div></a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="top-menu top-menu__actions">		
+					<ul>
+	                	<li><a class="text_non-decorated" href="#">
+							<div class="button top-menu__button">
+								<img src="./img/Shape.png" alt="add"/>
+												Разместить объявление
+							</div></a>
+						</li>
+						
+						<li><a class="text_non-decorated" href="#">
+							<div class="top-button">Войти</div></a>
+						</li>
+						<li><a class="hamburger" href="menu.html"><i class="fa fa-bars" aria-hidden="true"></i></a>
+						</li>
+	            	</ul>
+				</div>
+			</div>              
+	  </header>
+	
+	<div class="map">
+		<div id='map-canvas'></div>
+	</div>
+       
+	<div class="wrapper">
+		<div class="heading">
+					<div class="heading-link">
+						<a class="text_non-decorated listing__link" href="#">Долгосрочная аренда</a>
+						<span class="slash">/</span>
+					
+						<a class="text_non-decorated listing__link" href="#">Квартиры</a>
+						<span class="slash">/</span>
+					
+						<a class="text_non-decorated listing__link" href="#">Киев</a>
+					</div>
+					
+					<a class="text_non-decorated 
+							  listing__link
+							  heading-link_mobile" href="#">Назад на главную</a>
+					
+					<h2>Долгосрочная аренда квартир в Киеве</h2>	
+					<div class="heading-results">
+						<div class="heading-results__amount">
+							3 варианта размещения
+						</div>
+								
+						<div class="heading-results-sort">
+							<select class="heading-results-sort__by heading-results-sort__by_price">
+								<option selected value="sort">Сортировать</option>
+		                    	<option value="cheap">Сначала дешевые</option>
+		                    	<option value="expensive">Сначала дорогие</option>
+		                	</select>
+										
+							<select class="heading-results-sort__by heading-results-sort__by_currency">
+								<option selected value="currency">Валюта</option>
+		                    	<option value="UAH">Гривна</option>
+		                    	<option value="USD">Доллар</option>
+								<option value="EUR">Евро</option>
+		                	</select>
+						</div>
+				 	</div>
+				</div>
+		 
+		<div class="listing">
+			<div class="listing__image listing__image_first"></div>
+			 
+			<div class="listing-info">
+				<a class="text_non-decorated
+						  listing__link" href="#">2 комн., Дарницкий р-н, Пчелки 2б</a>
+					
+				<div class="listing-info-location">
+					<div class="subway-identifier
+								subway-identifier_green"></div>Позняки
+					<span class="subway-identifier__distance">30 мин пешком</span>
+				</div>
+						
+				<div class="listing-features">
+					<span class="listing-features__title">Особенности</span>
+								
+					<div class="listing-features__details">120 кв. м.
+						<div class="divider"></div>этаж 1 из 5
+					</div>
+								
+					<div class="listing-features__text">
+						<p>Комунальные включены, без старой мебели, новый дом, дизайнерский ремонт, 
+							тихий район, удобная транспортная развязка, шикарный вид на Днепр.</p>
+					</div>
+				</div>
+			</div>
+	
+			<div class="listing-pricing">
+				<p class="listing-pricing__uah">11 600 грн</p>
+				<div class="listing-pricing__usd">
+					<label>460$</label>
+					<a class="text_non-decorated">
+						<div class="listing-pricing__usd__rate">курс</div>
+					</a>
+				</div>
+						
+				<div class="listing-pricing__label">
+					<div class="listing-pricing__label_red">Высокая цена
+						<img src="img/info.png" alt="info">
+					</div>
+				</div>
+						
+				<div class="listing-pricing-connect">
+					<div class="listing-pricing-connect__call">
+						<img src="img/phone.png" alt="call">
+					</div>
+					<div class="listing-pricing-connect__text">
+						<img src="img/facebook-messenger.png" alt="text">
+					</div>
+				</div>
+						
+				<div class="listing-pricing__next">
+					<a class="text_non-decorated
+							  listing-pricing__next_link" href="#">След. раздел <img src="img/arrow.png" alt="next">
+					</a>
+					<p>Инфраструктура</p>
+				</div>
+			</div>
+		</div>
+		<div class="listing-dots">
+			<a href=""><div class="listing-dots__item"></div></a>
+			<a href=""><div class="listing-dots__item"></div></a>
+		</div>
+		 
+		<div class="listing">
+			<div class="listing__image listing__image_second"></div>
+			 
+			<div class="listing-info">
+				<a class="text_non-decorated
+						  listing__link" href="#">2 комн., Оболонский р-н, Полярная 20</a>
+					
+				<div class="listing-info-location">
+					<div class="subway-identifier
+								subway-identifier_blue"></div>Героев Днепра
+					<span class="subway-identifier__distance">10 мин пешком</span>
+				</div>
+						
+				<div class="listing-features">
+					<span class="listing-features__title">Особенности</span>
+								
+					<div class="listing-features__details">78 кв. м.
+						<div class="divider"></div>этаж 2 из 5
+					</div>
+								
+					<div class="listing-features__text">
+						<p>Без комунальных, евроремонт, хозяева в Польше, 15 мин. 
+										до озера, кофеварка, уборщица.</p>
+					</div>
+				</div>
+			</div>
+	
+			<div class="listing-pricing">
+				<p class="listing-pricing__uah">11 500 грн</p>
+				<div class="listing-pricing__usd">
+					<label>420$</label>
+					<a class="text_non-decorated">
+						<div class="listing-pricing__usd__rate">курс</div>
+					</a>
+				</div>
+						
+				<div class="listing-pricing__label">
+					<div class="listing-pricing__label_green">Хорошая цена
+						<img src="img/info.png" alt="info">
+					</div>
+				</div>
+						
+				<div class="listing-pricing-connect">
+					<div class="listing-pricing-connect__call">
+						<img src="img/phone.png" alt="call">
+					</div>
+					<div class="listing-pricing-connect__text">
+						<img src="img/facebook-messenger.png" alt="text">
+					</div>
+				</div>
+						
+				<div class="listing-pricing__next">
+					<a class="text_non-decorated
+							  listing-pricing__next_link" href="#">След. раздел <img src="img/arrow.png" alt="next">
+					</a>
+					<p>Инфраструктура</p>
+				</div>
+			</div>
+			
+		</div>
+		<div class="listing-dots">
+			<a href=""><div class="listing-dots__item"></div></a>
+			<a href=""><div class="listing-dots__item"></div></a>
+		</div>
+		 
+		<div class="listing">
+			<div class="listing__image listing__image_third"></div>
+			 
+			<div class="listing-info">
+				<a class="text_non-decorated
+						  listing__link" href="#">2 комн., Оболонский р-н, Полярная 20</a>
+					
+				<div class="listing-info-location">
+					<div class="subway-identifier
+								subway-identifier_blue"></div>Героев Днепра
+					<span class="subway-identifier__distance">10 мин пешком</span>
+				</div>
+						
+				<div class="listing-features">
+					<span class="listing-features__title">Особенности</span>
+								
+					<div class="listing-features__details">78 кв. м.
+						<div class="divider"></div>этаж 2 из 5
+					</div>
+								
+					<div class="listing-features__text">
+						<p>Без комунальных, евроремонт, хозяева в Польше, 15 мин. 
+										до озера, кофеварка, уборщица.</p>
+					</div>
+				</div>
+			</div>
+	
+			<div class="listing-pricing">
+				<div class="listing-pricing__uah">11 500 грн</div>
+				<div class="listing-pricing__usd">
+					<label>420$</label>
+					<a class="text_non-decorated">
+						<div class="listing-pricing__usd__rate">курс</div>
+					</a>
+				</div>
+						
+				<div class="listing-pricing__label">
+					<div class="listing-pricing__label_green">Хорошая цена
+						<img src="img/info.png" alt="info">
+					</div>
+				</div>
+						
+				<div class="listing-pricing-connect">
+					<div class="listing-pricing-connect__call">
+						<img src="img/phone.png" alt="call">
+					</div>
+					<div class="listing-pricing-connect__text">
+						<img src="img/facebook-messenger.png" alt="text">
+					</div>
+				</div>
+						
+				<div class="listing-pricing__next">
+					<a class="text_non-decorated
+							  listing-pricing__next_link" href="#">След. раздел <img src="img/arrow.png" alt="next">
+					</a>
+					<p>Инфраструктура</p>
+				</div>
+			</div>
+		</div>
+		<div class="listing-dots">
+			<a href=""><div class="listing-dots__item"></div></a>
+			<a href=""><div class="listing-dots__item"></div></a>
+		</div>
+		    	<div class="bottom-links">
+		          <div class="column">
+		              <ul class="column-list">
+											<li class="column-list__title">Metrovka</li>
+											<li class="column-list-entry"><a class="column-list-entry__text" href="">О компании</a></li>
+		                  <li class="column-list-entry"><a class="column-list-entry__text" href="">Пресса о нас</a></li> 
+											<li class="column-list-entry"><a class="column-list-entry__text" href="">
+													Пользовательское соглашение</a></li>
+											<li class="column-list-entry"><a class="column-list-entry__text" href="">Карта сайта</a></li>
+											<li class="column-list-entry"><a class="column-list-entry__text" href="">Помощь</a></li>
+		              </ul>
+		          </div>
+		            
+		          <div class="column">
+		              <ul class="column-list">
+											<li class="column-list__title">Партнерство</li>
+		                  <li class="column-list-entry"><a class="column-list-entry__text" href="">Как разместить обьявление</a></li>
+											<li class="column-list-entry"><a class="column-list-entry__text" href="">Инструменты продвижения</a></li>
+											<li class="column-list-entry"><a class="column-list-entry__text" href="">
+													Правила заполнения обьявлений</a></li>
+		              </ul>
+		          </div>
+		            
+		          <div class="column">
+		              <ul class="column-list">
+											<li class="column-list__title">Узнайте больше</li>
+		                  <li class="column-list-entry"><a class="column-list-entry__text" href="">Бонусная программа Bonus+</a></li>
+											<li class="column-list-entry"><a class="column-list-entry__text" href="">Telegram Metrovka Bot</a></li>
+											<li class="column-list-entry"><a class="column-list-entry__text" href="">Как работает поиск</a></li>
+											<li class="column-list-entry"><a class="column-list-entry__text" href="">
+													Как пользоваться избранным</a></li>
+		              </ul>
+		          </div>
+		            
+		          <div class="column">
+		              <ul class="column-list">
+						  <li class="column-list__title">Контакты</li>
+						  
+						  <li class="column-list-entry
+									 column-list-entry__social">
+							  <a class="column-list-entry__text" href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+							  <a class="column-list-entry__text" href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
+							  <a class="column-list-entry__text" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						  </li>
+						  
+						  <li class="column-list-entry">ул. Жилянская, 37
+							  <span class="column-list-entry__address">Киев, 01033</span>
+						  </li>
+						  <li class="column-list-entry">info@metrovka.ua</li>
+						  <li><a class="text_non-decorated" href="">
+								<div class="button button_green">Оставить заявку</div></a>
+						  </li>
+		              </ul>
+		          </div>
+		      </div>
+	</div>
+			
+	<footer>
+      <div class="logo">
+          <a href=""><img src="img/logo.svg" alt="logo"></a>
+      </div>
+  </footer>
+
+</body>
+</html>
