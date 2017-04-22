@@ -1,0 +1,95 @@
+@media screen and (min-width: 1280px)
+	.top-container
+		margin: 0
+		width: 75%
+
+	.top-menu__actions ul li:nth-child(3)
+		display: none
+	
+@media screen and (min-width: 880px) and (max-width: 1279px)
+	.top-container
+		margin: 0 auto
+		width: 80%
+
+	.top-menu__actions ul li:nth-child(3)
+		display: none
+
+@media screen and (max-width: 879px)
+	.top-container
+		width: 100%
+		padding: 0 1rem
+
+	.top-menu__nav ul li:nth-child(n+3)
+		display: none
+
+	.top-menu__actions ul li:nth-child(-n+2)
+		display: none
+
+	.hamburger
+		font-size: 28px
+		&:hover
+			color: $lightgrey
+			cursor: pointer
+	
+.top-container
+	display: flex
+	font-size: 0.84rem
+	& ul
+		margin: 0
+		padding-left: 0
+
+.top-menu
+	padding: 0
+	list-style: none
+
+	&__nav
+		width: 60%
+
+		& li
+			display: inline-block
+			margin-right: 0.2rem
+	
+	&__actions
+		width: 40%
+		margin-top: 10px
+		margin-left: auto
+		text-align: right
+
+		& li
+			display: inline-block
+			margin-left: 0.2rem
+	
+	&__logo
+		transform: translateY(35%)
+
+	&__button
+		border: none
+		color: white
+		max-width: 100%
+		padding: 10px
+		background-color: #44b574
+
+		&:hover
+			background-color: $hovergreen
+
+		&:active
+			background-color: $hovergreen
+
+		&:disabled
+			opacity: .3
+	
+		& img
+			padding-right: 7px
+			transform: translateY(20%)
+
+.top-button
+	@extend .underlined-button
+	max-width: 100%
+	color: white
+	
+	&:hover
+		border-color: white
+
+	& img
+		transform: translateY(-40%)
+		margin-right: 5px

@@ -1,0 +1,75 @@
+@import partials/variables
+@import partials/button-styles
+@import partials/elem-styles
+@import partials/link-styles
+
+@import partials/top-block
+@import partials/footer-block
+@import partials/heading-block
+@import partials/listing-block
+	
+body
+	font: 14px "Open Sans", sans-serif
+	background-color: rgba(90, 104, 114, .08)
+	margin: 0
+
+*
+	box-sizing: border-box
+
+@media screen and (min-width: 1280px)
+	.wrapper
+		margin-left: 2rem
+		width: 75%
+
+	header
+		padding-left: 2rem
+
+	.map
+		float: right
+		margin-top: 162px
+		margin-right: 10px
+		overflow: hidden	
+		max-width: 20%
+
+	#map-canvas
+		height: 599px
+		width: 448.2px
+
+		& img
+			max-width: none!important
+			background: none!important
+	
+@media screen and (min-width: 880px) and (max-width: 1279px)
+	.wrapper
+		margin: 0 auto
+		width: 80%
+		 
+@media screen and (min-width: 620px) and (max-width: 879px)
+	.wrapper
+		width: 100%
+
+@media screen and (max-width: 619px)
+	.wrapper
+		width: 100%
+
+header
+	background-color: $green
+	color: white
+	padding-bottom: 10px
+
+.centering-block
+	display: flex
+	justify-content: center
+	
+.title_centering
+	max-width: 600px
+	text-align: center
+
+.logo
+	width: 100%
+	text-align: center
+	margin: 20px 0 50px 0
+
+.underlined-button
+	padding: 10px
+	border-bottom: 3px solid transparent

@@ -1,0 +1,323 @@
+@import partials/variables
+@import partials/footer-block
+@import partials/checkbox-styles
+@import partials/link-styles
+@import partials/button-styles
+@import partials/top-block
+@import partials/blog-block
+
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat)
+  background:
+    image: url($imgpath)
+    position: $position
+    repeat: $repeat
+	
+@mixin make-green-button()
+  margin-top: 20px
+  width: 320px
+  height: 40px
+  color: white
+  background-color: $maincolor
+
+@mixin checkbox-styles($bg,$font)
+  background: $bg
+  color: $font
+
+*
+  box-sizing: border-box
+
+h2
+  font-size: 24px
+
+body
+  width: 100%
+  margin: auto
+  background-color: rgba(90, 104, 114, 0.08)
+  font: 14px "Open Sans", sans-serif
+  position: relative
+
+$maincolor: #30AE63
+button
+  text-align: center
+  border-color: rgba(255,255,255,0.1)
+
+header
+  display: flex
+  justify-content: center
+
+.checkbox__indicator
+  border: 2px solid white
+
+.checkbox:hover input ~ .checkbox__indicator,
+.checkbox input:focus ~ .checkbox__indicator
+  @include checkbox-styles(white, $green)
+
+.checkbox input:checked ~ .checkbox__indicator,
+.checkbox input:checked:focus ~ .checkbox__indicator
+  @include checkbox-styles(white, $green)
+	
+.centering-block
+  display: flex
+  justify-content: center
+
+
+.top
+  @include background("../img/homepage.png")
+  background-size: 100% 100%
+  color: white
+  width: 100%
+  min-height: 301px
+  position: relative
+
+  &__container
+    width: 80%
+    margin: auto
+    align-content: center
+
+  &__main-part
+    padding-left: 40px
+    &_name
+      font-size: 32px
+      @media screen and (max-width: 360px)
+        font-size: 24px
+
+
+
+    &__container
+      width: 80%
+      justify-content: space-between
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      margin-bottom: 40px
+    &__chooser
+
+      transform: translateY(-28%)
+      line-height: 15px
+      &_selector
+        width: 230px
+        height: 40px
+        border-color: none
+
+    &__checkbox-for-rooms
+      width: 265px
+
+      line-height: 15px
+      margin-left: 5%
+      transform: translateY(-20%)
+      &_amount
+        display: flex
+        justify-content: left
+        line-height: 40px
+    div.button.button_white
+      transform: translateY(-20%)
+
+
+.property
+  display: flex
+  flex-wrap: wrap-reverse
+  width: 80%
+  justify-content: center
+  color: black
+  margin: 0 auto
+  background-color: white
+  padding-top: 55px
+  margin-top: 30px
+  margin-bottom: 30px
+  padding-bottom: 40px
+  overflow: hidden
+  &__info
+    width: 390px
+    &_name
+      font-size: 24px
+  &__list
+    list-style: none
+    li
+      display: inline-block
+      padding-right: 40px
+      a
+        color: black
+  &__selector
+    width: 313px
+    height: 40px
+    border-color: none
+  &__image
+    width: 411px
+    height: 212px
+    padding-left: 20px
+    flex-shrink: 1
+
+.check
+  color: $maincolor
+  background-color: transparent
+
+.offers,.advertisments
+  width: 80%
+  color: black
+  margin: auto
+  background-color: white
+  margin-bottom: 30px
+  text-align: center
+  overflow: hidden
+  &_name
+    margin: 25px 0
+    font-size: 24px
+    text-align: center
+  &__mainpart
+    position: flex
+    flex-wrap: nowrap
+    display: inline-flex
+    justify-content: center
+    padding-left: 15px
+    padding-bottom: 15px
+
+  &__content
+    padding-right: 5px
+    flex-wrap: nowrap
+    &:hover
+      background-color: $lightgrey
+    &_info
+      p
+        text-align: left
+        font-size: 12px
+        line-height: 5px
+    &_details
+      color: gray
+
+
+.advertisments
+  &__list
+    text-align: center
+    list-style: none
+    li
+      display: inline-block
+      padding-right: 40px
+
+
+.content
+  width: 80%
+  margin: 0 auto
+  text-align: center
+
+  .connect
+    justify-content: center
+    h2
+      font-size: 24px
+    p
+      margin: 0 auto
+      max-width: 504px
+    &__buttons
+      display: flex
+      justify-content: center
+
+      padding-top: 20px
+      padding-bottom: 20px
+      a
+        color: black
+        padding-right: 20px
+  .telegram
+    display: flex
+    justify-content: space-between
+
+    img
+      padding-left: 10%
+      padding-right: 7%
+    &__content
+      padding: 0 5%
+      text-align: left
+      margin: 0 auto
+      background-color: white
+      align-self: center
+      width: 435px
+      height: 448px
+      &_title
+
+        margin-left: -55px
+        h2
+          img
+            transform: translateY(37%)
+          padding-bottom: 25px
+      &__list
+        margin-left: -25px
+        li
+
+          padding-bottom: 10px
+      button
+        @include make-green-button()
+
+
+  .dots
+    display: flex
+    width: 100%
+    justify-content: center
+    margin: 50px 0
+    word-spacing: 10px
+
+    &__item
+      border: 2px solid $maincolor
+      border-radius: 50%
+      margin: 0 6px
+      height: 14px
+      width: 14px
+      &:hover
+        background-color: $maincolor
+
+    .best
+      padding-top: 15px
+      padding-bottom: 15px
+      border-top: 2px solid #ccc
+      text-align: center
+      a
+        color: black
+		
+footer
+  text-align: center
+  margin: 30px 0
+
+
+@media screen and (min-width: 891px)
+  .top__menu.top__menu_right
+    li:nth-child(3n+3)
+      display: none
+
+
+@media screen and (max-width: 890px)
+  h2
+    font-size: 20px
+
+
+  .top__container
+    width: 100%
+    margin-left: -30px
+  .top__menu.top__menu_left
+    li:nth-of-type(1n+3)
+      display: none
+  .top__menu.top__menu_right
+    li:not([class="dropdown"])
+      display: none
+
+
+  .property
+    width: 100%
+    &__info
+      padding-left: 10px
+      &_name
+        font-size: 20px
+
+
+  .offers,.advertisments
+    width: 100%
+    &_name
+      font-size: 20px
+
+
+  .content
+    width: 100%
+    margin-left: 5px
+  .telegram_image
+    display: none
+
+
+
+
+

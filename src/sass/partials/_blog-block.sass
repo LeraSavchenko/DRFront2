@@ -1,0 +1,69 @@
+.blog
+	width: 100%
+	background-color: white
+	padding-top: 10px
+	margin-bottom: 30px
+
+	&__title
+		margin: 0 auto 20px
+
+	&-feed
+		@extend .centering-block
+		margin: 0 5% 30px
+
+		&-item
+			width: 33%
+			text-align: left
+			margin: 0 1.5%
+
+			&__topic
+				@extend .text_non-decorated
+				@extend .link_hover_green
+				font-size: 16px
+				font-weight: normal
+				color: black
+
+			&__category
+				@extend .text_non-decorated
+				@extend .link_hover_grey
+				font-size: 11px
+				font-weight: normal
+
+				&_lilac
+					color: #ba8ff7
+
+				&_green
+					color: $green
+
+				&_blue
+					color: #2573d8
+
+			&__image
+				max-width: 100%
+				height: auto
+				text-align: center
+
+			&-author
+				color: $grey
+				font-size: 12px
+				display: flex
+				justify-content: left
+
+				&__divider
+					border-radius: 50%
+					background-color: $grey
+					width: 3px
+					height: 3px
+					margin: 7px 7px 0
+@media screen and (max-width: 360px)
+	.blog
+		margin: 0 auto
+		&-feed
+			display: flex
+			align-items: left
+			flex-direction: column
+			&-item
+				padding-bottom: 50px
+				min-width: 320px
+
+

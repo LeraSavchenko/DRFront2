@@ -1,0 +1,48 @@
+.button
+	min-height: 40px
+	text-align: center
+	border-radius: 2px
+
+
+.button_green
+	padding: 10px 0
+	background-color: $green
+	color: white
+.long
+	width: 313px
+	margin-top: 20px
+	height: 40px
+
+	
+.button_green:hover
+	background-color: $hovergreen
+
+.button_white
+	padding: 10px 0
+	background-color: white
+	color: $green
+	border-color: $green
+	width: 201px
+.button_white:hover
+	background-color: $lightgrey
+
+.underlined-button
+	padding: 10px
+	border-bottom: 3px solid
+	border-color: transparent
+.underlined-button:hover
+	border-color: $green
+
+
+.long-button
+	@extend .button
+	width: 100%
+	line-height: 40px
+	border-top: 2px solid $lightgrey
+		
+.long-button_font
+	@extend .link_hover_green
+	@extend .text_non-decorated
+	font-size: 16px
+	color: black
+
