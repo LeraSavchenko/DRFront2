@@ -1,0 +1,18 @@
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat)
+  background:
+    image: url($imgpath)
+    position: $position
+    repeat: $repeat
+	
+@mixin make-green-button()
+  margin-top: 20px
+  width: 320px
+  height: 40px
+  color: white
+  background-color: $maincolor
+
+@mixin checkbox-styles($bg,$font)
+  background: $bg
+  color: $font
+  
+  

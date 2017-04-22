@@ -1,0 +1,38 @@
+@mixin make-green-button()
+  margin-top: 20px
+  width: 320px
+  height: 40px
+  color: white
+  background-color: $green
+
+.telegram
+  display: flex
+  justify-content: space-between
+
+  img
+    padding-left: 10%
+    padding-right: 7%
+    
+  &__content
+    padding: 0 5%
+    text-align: left
+    margin: 0 auto
+    background-color: white
+    align-self: center
+    width: 435px
+    height: 448px
+    
+    &_title
+      margin-left: -55px
+      h2
+        img
+          transform: translateY(37%)
+        padding-bottom: 25px
+        
+    &__list
+      margin-left: -25px
+      li
+        padding-bottom: 10px
+        
+    button
+        @include make-green-button()

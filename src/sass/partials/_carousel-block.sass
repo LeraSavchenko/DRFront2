@@ -1,0 +1,46 @@
+.carousel
+  width: 80%
+  color: black
+  margin: auto
+  background-color: white
+  margin-bottom: 1rem
+  text-align: center
+  overflow-x: scroll
+  
+  &_name
+    margin: 25px 0
+    font-size: 24px
+    text-align: center
+    
+  &__mainpart
+    position: flex
+    flex-wrap: nowrap
+    display: inline-flex
+    justify-content: center
+    padding-left: 15px
+    padding-bottom: 15px
+    
+  &__content
+    margin-right: 1em
+    flex-wrap: nowrap
+    
+    &_info
+      p
+        text-align: left
+        font-size: 12px
+        line-height: 1
+        &:hover
+          cursor: pointer
+    &_details
+      color: gray
+
+
+.carousel-ad
+  &__list
+    text-align: center
+    list-style: none
+    li
+      display: inline-block
+      padding-right: 40px
+      a
+        color: black

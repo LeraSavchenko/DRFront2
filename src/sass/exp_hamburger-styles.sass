@@ -4,7 +4,7 @@
 
 body
 	font: 14px "Open Sans", sans-serif
-	background-color: $lightgrey
+	background-color: $green
 	margin: 0
 	color: white
 
@@ -16,10 +16,6 @@ header
 	height: 60px
 	display: inline-flex
 	padding: 15px
-
-.button
-	@extend .button
-	background-color: $grey
 
 .hamburger-button
 	width: auto
@@ -58,10 +54,19 @@ header
 		&:disabled
 			border-color: transparent
 			color: $lightgrey
-
-		& img
-			transform: translateY(-40%)
-			margin-right: 5px
+  
+.hamburger__add
+      @extend .button
+      background-color: #44b574
+      width: auto
+      padding: 10px
+      color: white
+      &:hover
+        background-color: $hovergreen
+  
+.hamburger__add img
+		transform: translateY(20%)
+		margin-right: 5px
 
 .hamburger__actions 
 	float: left
