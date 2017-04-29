@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>Listing</title>
 	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-	<script src="js/map.js" type='text/javascript'></script>
-	
-	<script src="js/slider.js" type='text/javascript'></script>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://use.fontawesome.com/67d861fab9.js"></script>
+	
+	<script src="js/map.js" type='text/javascript'></script>
+	<script src="js/sliderPlugin.js" type='text/javascript'></script>
 	
     <link rel="stylesheet" type="text/css" href="css/map-styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -104,223 +104,276 @@
 				</div>
 		 
 		<div class="listing">
-			<div class="listing__image listing__image_first"></div>
-          
-		  <div class=slider>
-          
-			<div id="itemOne" class="slide listing-info">
-				<a class="text_non-decorated
-						  listing__link" href="#">2 комн., Дарницкий р-н, Пчелки 2б</a>
-					
-				<div class="listing-info-location">
-					<div class="subway-identifier
-								subway-identifier_green"></div>Позняки
-					<span class="subway-identifier__distance">30 мин пешком</span>
-				</div>
-						
-				<div class="listing-features">
-					<span class="listing-features__title">Особенности</span>
+					<div class="listing__image listing__image_first"></div>
+		          
+				  <div class="slider1">
+		          
+					<div class="listing-info slide">
+						<a class="text_non-decorated
+								  listing__link" href="#">2 комн., Дарницкий р-н, Пчелки 2б</a>
+							
+						<div class="listing-info-location">
+							<div class="subway-identifier
+										subway-identifier_green"></div>Позняки
+							<span class="subway-identifier__distance">30 мин пешком</span>
+						</div>
 								
-					<div class="listing-features__details">120 кв. м.
-						<div class="divider"></div>этаж 1 из 5
+						<div class="listing-features">
+							<span class="listing-features__title">Особенности</span>
+										
+							<div class="listing-features__details">120 кв. м.
+								<div class="divider"></div>этаж 1 из 5
+							</div>
+										
+							<div class="listing-features__text">
+								<p>Комунальные включены, без старой мебели, новый дом, дизайнерский ремонт, 
+									тихий район, удобная транспортная развязка, шикарный вид на Днепр.</p>
+							</div>
+						</div>
 					</div>
+		         
+					  <div class="listing-info slide">
+						<a class="text_non-decorated
+								  listing__link" href="#">2 комн., Дарницкий р-н, Пчелки 2б</a>
+							
+						<div class="listing-info-location">
+							<div class="subway-identifier
+										subway-identifier_green"></div>Позняки
+							<span class="subway-identifier__distance">30 мин пешком</span>
+						</div>
 								
-					<div class="listing-features__text">
-						<p>Комунальные включены, без старой мебели, новый дом, дизайнерский ремонт, 
-							тихий район, удобная транспортная развязка, шикарный вид на Днепр.</p>
+						<div class="listing-features">
+							<span class="listing-features__title">Особенности</span>
+										
+							<div class="listing-features__details">Рядом школа
+								<div class="divider"></div>5 мин ходьбы
+							</div>
+										
+							<div class="listing-features__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat ex non feugiat interdum. Nunc eget justo tincidunt enim faucibus eleifend sed sit amet nisi. Vivamus eget scelerisque justo</p>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-         
-			  <div id="itemOne" class="slide listing-info">
-				<a class="text_non-decorated
-						  listing__link" href="#">2 комн., Дарницкий р-н, Пчелки 2б</a>
-					
-				<div class="listing-info-location">
-					<div class="subway-identifier
-								subway-identifier_green"></div>Позняки
-					<span class="subway-identifier__distance">30 мин пешком</span>
-				</div>
-						
-				<div class="listing-features">
-					<span class="listing-features__title">Особенности</span>
+		          </div>
+			
+					<div class="listing-pricing">
+						<p class="listing-pricing__uah">11 600 грн</p>
+						<div class="listing-pricing__usd">
+							<label>460$</label>
+							<a class="text_non-decorated">
+								<div class="listing-pricing__usd__rate">курс</div>
+							</a>
+						</div>
 								
-					<div class="listing-features__details">120 кв. м.
-						<div class="divider"></div>этаж 1 из 5
-					</div>
+						<div class="listing-pricing__label">
+							<div class="listing-pricing__label_red">Высокая цена
+								<img src="img/info.png" alt="info">
+							</div>
+						</div>
 								
-					<div class="listing-features__text">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat ex non feugiat interdum. Nunc eget justo tincidunt enim faucibus eleifend sed sit amet nisi. Vivamus eget scelerisque justo</p>
+						<div class="listing-pricing-connect">
+							<div class="listing-pricing-connect__call">
+								<img src="img/phone.png" alt="call">
+							</div>
+							<div class="listing-pricing-connect__text">
+								<img src="img/facebook-messenger.png" alt="text">
+							</div>
+						</div>
+								
+						<div class="listing-pricing__next">
+							<a class="text_non-decorated
+									  listing-pricing__next_link" href="#">След. раздел <img src="img/arrow.png" alt="next">
+							</a>
+							<p>Инфраструктура</p>
+						</div>
 					</div>
 				</div>
-			</div>
-          </div>
-	
-			<div class="listing-pricing">
-				<p class="listing-pricing__uah">11 600 грн</p>
-				<div class="listing-pricing__usd">
-					<label>460$</label>
-					<a class="text_non-decorated">
-						<div class="listing-pricing__usd__rate">курс</div>
-					</a>
+		
+				<div class="listing-dots">
+					<a href=""><div class="listing-dots__item"></div></a>
+					<a href=""><div class="listing-dots__item"></div></a>
 				</div>
-						
-				<div class="listing-pricing__label">
-					<div class="listing-pricing__label_red">Высокая цена
-						<img src="img/info.png" alt="info">
-					</div>
-				</div>
-						
-				<div class="listing-pricing-connect">
-					<div class="listing-pricing-connect__call">
-						<img src="img/phone.png" alt="call">
-					</div>
-					<div class="listing-pricing-connect__text">
-						<img src="img/facebook-messenger.png" alt="text">
-					</div>
-				</div>
-						
-				<div class="listing-pricing__next">
-					<a class="text_non-decorated
-							  listing-pricing__next_link" href="#">След. раздел <img src="img/arrow.png" alt="next">
-					</a>
-					<p>Инфраструктура</p>
-				</div>
-			</div>
-		</div>
-		<div class="listing-dots">
-			<a href=""><div class="listing-dots__item"></div></a>
-			<a href=""><div class="listing-dots__item"></div></a>
-		</div>
-		 
 		<div class="listing">
-			<div class="listing__image listing__image_second"></div>
-			 
-			<div class="listing-info">
-				<a class="text_non-decorated
-						  listing__link" href="#">2 комн., Оболонский р-н, Полярная 20</a>
+					<div class="listing__image listing__image_second"></div>
+					 
+					<div class="slider2">
+			
+					<div class="listing-info slide">
+						<a class="text_non-decorated
+								  listing__link" href="#">2 комн., Оболонский р-н, Полярная 20</a>
+							
+						<div class="listing-info-location">
+							<div class="subway-identifier
+										subway-identifier_blue"></div>Героев Днепра
+							<span class="subway-identifier__distance">10 мин пешком</span>
+						</div>
+								
+						<div class="listing-features">
+							<span class="listing-features__title">Особенности</span>
+										
+							<div class="listing-features__details">78 кв. м.
+								<div class="divider"></div>этаж 2 из 5
+							</div>
+										
+							<div class="listing-features__text">
+								<p>Без комунальных, евроремонт, хозяева в Польше, 15 мин. 
+												до озера, кофеварка, уборщица.</p>
+							</div>
+						</div>
+					</div>
 					
-				<div class="listing-info-location">
-					<div class="subway-identifier
-								subway-identifier_blue"></div>Героев Днепра
-					<span class="subway-identifier__distance">10 мин пешком</span>
-				</div>
-						
-				<div class="listing-features">
-					<span class="listing-features__title">Особенности</span>
+					<div class="listing-info slide">
+						<a class="text_non-decorated
+								  listing__link" href="#">2 комн., Дарницкий р-н, Пчелки 2б</a>
+							
+						<div class="listing-info-location">
+							<div class="subway-identifier
+										subway-identifier_green"></div>Позняки
+							<span class="subway-identifier__distance">30 мин пешком</span>
+						</div>
 								
-					<div class="listing-features__details">78 кв. м.
-						<div class="divider"></div>этаж 2 из 5
+						<div class="listing-features">
+							<span class="listing-features__title">Особенности</span>
+										
+							<div class="listing-features__details">120 кв. м.
+								<div class="divider"></div>этаж 1 из 5
+							</div>
+										
+							<div class="listing-features__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat ex non feugiat interdum. Nunc eget justo tincidunt enim faucibus eleifend sed sit amet nisi. Vivamus eget scelerisque justo</p>
+							</div>
+						</div>
 					</div>
-								
-					<div class="listing-features__text">
-						<p>Без комунальных, евроремонт, хозяева в Польше, 15 мин. 
-										до озера, кофеварка, уборщица.</p>
-					</div>
-				</div>
-			</div>
-	
-			<div class="listing-pricing">
-				<p class="listing-pricing__uah">11 500 грн</p>
-				<div class="listing-pricing__usd">
-					<label>420$</label>
-					<a class="text_non-decorated">
-						<div class="listing-pricing__usd__rate">курс</div>
-					</a>
-				</div>
-						
-				<div class="listing-pricing__label">
-					<div class="listing-pricing__label_green">Хорошая цена
-						<img src="img/info.png" alt="info">
-					</div>
-				</div>
-						
-				<div class="listing-pricing-connect">
-					<div class="listing-pricing-connect__call">
-						<img src="img/phone.png" alt="call">
-					</div>
-					<div class="listing-pricing-connect__text">
-						<img src="img/facebook-messenger.png" alt="text">
-					</div>
-				</div>
-						
-				<div class="listing-pricing__next">
-					<a class="text_non-decorated
-							  listing-pricing__next_link" href="#">След. раздел <img src="img/arrow.png" alt="next">
-					</a>
-					<p>Инфраструктура</p>
-				</div>
 			</div>
 			
-		</div>
-		<div class="listing-dots">
-			<a href=""><div class="listing-dots__item"></div></a>
-			<a href=""><div class="listing-dots__item"></div></a>
-		</div>
-		 
+					<div class="listing-pricing">
+						<p class="listing-pricing__uah">11 500 грн</p>
+						<div class="listing-pricing__usd">
+							<label>420$</label>
+							<a class="text_non-decorated">
+								<div class="listing-pricing__usd__rate">курс</div>
+							</a>
+						</div>
+								
+						<div class="listing-pricing__label">
+							<div class="listing-pricing__label_green">Хорошая цена
+								<img src="img/info.png" alt="info">
+							</div>
+						</div>
+								
+						<div class="listing-pricing-connect">
+							<div class="listing-pricing-connect__call">
+								<img src="img/phone.png" alt="call">
+							</div>
+							<div class="listing-pricing-connect__text">
+								<img src="img/facebook-messenger.png" alt="text">
+							</div>
+						</div>
+								
+						<div class="listing-pricing__next">
+							<a class="text_non-decorated
+									  listing-pricing__next_link" href="#">След. раздел <img src="img/arrow.png" alt="next">
+							</a>
+							<p>Инфраструктура</p>
+						</div>
+					</div>
+				</div>
+		
+				<div class="listing-dots">
+					<a href=""><div class="listing-dots__item"></div></a>
+					<a href=""><div class="listing-dots__item"></div></a>
+				</div>
 		<div class="listing">
-			<div class="listing__image listing__image_third"></div>
-			 
-			<div class="listing-info">
-				<a class="text_non-decorated
-						  listing__link" href="#">2 комн., Оболонский р-н, Полярная 20</a>
+					<div class="listing__image listing__image_third"></div>
+					 
+					<div class="slider3">
+			
+					<div class="listing-info slide">
+						<a class="text_non-decorated
+								  listing__link" href="#">2 комн., Оболонский р-н, Полярная 20</a>
+							
+						<div class="listing-info-location">
+							<div class="subway-identifier
+										subway-identifier_blue"></div>Героев Днепра
+							<span class="subway-identifier__distance">10 мин пешком</span>
+						</div>
+								
+						<div class="listing-features">
+							<span class="listing-features__title">Особенности</span>
+										
+							<div class="listing-features__details">78 кв. м.
+								<div class="divider"></div>этаж 2 из 5
+							</div>
+										
+							<div class="listing-features__text">
+								<p>Без комунальных, евроремонт, хозяева в Польше, 15 мин. 
+												до озера, кофеварка, уборщица.</p>
+							</div>
+						</div>
+					</div>
 					
-				<div class="listing-info-location">
-					<div class="subway-identifier
-								subway-identifier_blue"></div>Героев Днепра
-					<span class="subway-identifier__distance">10 мин пешком</span>
-				</div>
-						
-				<div class="listing-features">
-					<span class="listing-features__title">Особенности</span>
+					<div class="listing-info slide">
+						<a class="text_non-decorated
+								  listing__link" href="#">2 комн., Дарницкий р-н, Пчелки 2б</a>
+							
+						<div class="listing-info-location">
+							<div class="subway-identifier
+										subway-identifier_green"></div>Позняки
+							<span class="subway-identifier__distance">30 мин пешком</span>
+						</div>
 								
-					<div class="listing-features__details">78 кв. м.
-						<div class="divider"></div>этаж 2 из 5
+						<div class="listing-features">
+							<span class="listing-features__title">Особенности</span>
+										
+							<div class="listing-features__details">120 кв. м.
+								<div class="divider"></div>этаж 1 из 5
+							</div>
+										
+							<div class="listing-features__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat ex non feugiat interdum. Nunc eget justo tincidunt enim faucibus eleifend sed sit amet nisi. Vivamus eget scelerisque justo</p>
+							</div>
+						</div>
 					</div>
+			</div>
+			
+					<div class="listing-pricing">
+						<div class="listing-pricing__uah">11 500 грн</div>
+						<div class="listing-pricing__usd">
+							<label>420$</label>
+							<a class="text_non-decorated">
+								<div class="listing-pricing__usd__rate">курс</div>
+							</a>
+						</div>
 								
-					<div class="listing-features__text">
-						<p>Без комунальных, евроремонт, хозяева в Польше, 15 мин. 
-										до озера, кофеварка, уборщица.</p>
+						<div class="listing-pricing__label">
+							<div class="listing-pricing__label_green">Хорошая цена
+								<img src="img/info.png" alt="info">
+							</div>
+						</div>
+								
+						<div class="listing-pricing-connect">
+							<div class="listing-pricing-connect__call">
+								<img src="img/phone.png" alt="call">
+							</div>
+							<div class="listing-pricing-connect__text">
+								<img src="img/facebook-messenger.png" alt="text">
+							</div>
+						</div>
+								
+						<div class="listing-pricing__next">
+							<a class="text_non-decorated
+									  listing-pricing__next_link" href="#">След. раздел <img src="img/arrow.png" alt="next">
+							</a>
+							<p>Инфраструктура</p>
+						</div>
 					</div>
 				</div>
-			</div>
-	
-			<div class="listing-pricing">
-				<div class="listing-pricing__uah">11 500 грн</div>
-				<div class="listing-pricing__usd">
-					<label>420$</label>
-					<a class="text_non-decorated">
-						<div class="listing-pricing__usd__rate">курс</div>
-					</a>
+		
+				<div class="listing-dots">
+					<a href=""><div class="listing-dots__item"></div></a>
+					<a href=""><div class="listing-dots__item"></div></a>
 				</div>
-						
-				<div class="listing-pricing__label">
-					<div class="listing-pricing__label_green">Хорошая цена
-						<img src="img/info.png" alt="info">
-					</div>
-				</div>
-						
-				<div class="listing-pricing-connect">
-					<div class="listing-pricing-connect__call">
-						<img src="img/phone.png" alt="call">
-					</div>
-					<div class="listing-pricing-connect__text">
-						<img src="img/facebook-messenger.png" alt="text">
-					</div>
-				</div>
-						
-				<div class="listing-pricing__next">
-					<a class="text_non-decorated
-							  listing-pricing__next_link" href="#">След. раздел <img src="img/arrow.png" alt="next">
-					</a>
-					<p>Инфраструктура</p>
-				</div>
-			</div>
-		</div>
-		<div class="listing-dots">
-			<a href=""><div class="listing-dots__item"></div></a>
-			<a href=""><div class="listing-dots__item"></div></a>
-		</div>
+		
 		    	<div class="bottom-links">
 		          <div class="column">
 		              <ul class="column-list">
