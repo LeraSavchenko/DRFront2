@@ -1,0 +1,76 @@
+$background: #30ae63
+$select-color: black
+$select-background: white
+$select-width: 313px
+$select-height: 40px
+
+.select
+  cursor: pointer
+  display: inline-block
+  position: relative
+  font-size: 14px
+  color: $select-color
+  background-color: $select-background
+  width: $select-width
+  height: $select-height
+
+.selected
+  background-color: $background
+  color: $select-background
+
+.select-styled
+  position: absolute
+  top: 0
+  right: 0
+  border: 2px solid darken($select-background, 15)
+  bottom: 0
+  left: 0
+  background-color: $select-background
+  padding: 8px 15px
+  &:after
+    content: ""
+    width: 0
+    height: 0
+    border: 7px solid transparent
+    border-color: $background transparent transparent transparent
+    position: absolute
+    top: 16px
+    right: 10px
+
+
+  &:active, &.active
+    border-color: $background $background transparent
+    &:after
+      top: 9px
+      border-color: transparent transparent $background transparent
+
+
+
+.select-options
+  display: none
+  position: absolute
+  top: 100%
+  right: 0
+  left: 0
+  z-index: 999
+  border: 2px solid transparent
+  border-color: transparent $background $background
+  margin: 0
+  padding: 0
+  list-style: none
+  background-color: $select-background
+  overflow: visible
+  li
+    margin: 0
+    padding: 12px 0
+    text-indent: 15px
+    overflow: visible
+    border-top: 1px solid darken($select-background, 10)
+    &:hover
+      color: $select-background
+      background: $background
+
+    &[rel="hide"]
+      display: none
+
+
